@@ -43,7 +43,11 @@
           <li>Taco</li>
           <li>Pizza</li>
           <br />
-          <li><a href="recipes_of_the_month.html">Recipes Of The Month</a></li>
+          <li id="about">
+            <a href="recipes_of_the_month.html" target="_blank"
+              >Recipes Of The Month</a
+            >
+          </li>
           <br />
           <li>Dessert</li>
           <li>Breakfast</li>
@@ -55,63 +59,63 @@
     <hr />
 
     <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img
-                src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg"
-                alt="Pancakes"
-                />
-            </div>
-            <div class="swiper-slide">
-                <img
-                src="https://cdn.pixabay.com/photo/2022/06/23/09/42/food-and-drink-industry-7279413_960_720.jpg"
-                alt="Vegie Pizza"
-                />
-            </div>
-            <div class="swiper-slide">
-                <img
-                src="https://cdn.pixabay.com/photo/2019/11/09/17/02/burger-4614022_960_720.jpg"
-                alt="Burger"
-                />
-            </div>
-            <div class="swiper-slide">
-                <img
-                src="https://cdn.pixabay.com/photo/2016/06/17/19/11/pasta-1463934_960_720.jpg"
-                alt="Pasta"
-                />
-            </div>
-            <div class="swiper-slide">
-                <img
-                src="https://cdn.pixabay.com/photo/2018/05/17/21/02/tacos-3409675_960_720.jpg"
-                alt="Tacos"
-                />
-            </div>
-            <div class="swiper-slide">
-                <img
-                src="https://cdn.pixabay.com/photo/2017/10/18/11/58/doner-kebab-2863915_960_720.jpg"
-                alt="Döner Kebab"
-                />
-            </div>
-            <div class="swiper-slide">
-                <img
-                src="https://cdn.pixabay.com/photo/2013/02/21/19/12/barbecue-84671_960_720.jpg"
-                alt="Shish Kebab"
-                />
-            </div>
-            <div class="swiper-slide">
-                <img
-                src="https://cdn.pixabay.com/photo/2020/12/27/13/51/couscous-5864012_960_720.jpg"
-                alt="Couscous"
-                />
-            </div>
-            <div class="swiper-slide">
-                <img
-                src="https://cdn.pixabay.com/photo/2018/03/22/10/59/dessert-3250027_960_720.jpg"
-                alt="Chocolate Cake"
-                />
-            </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg"
+            alt="Pancakes"
+          />
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.pixabay.com/photo/2022/06/23/09/42/food-and-drink-industry-7279413_960_720.jpg"
+            alt="Vegie Pizza"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.pixabay.com/photo/2019/11/09/17/02/burger-4614022_960_720.jpg"
+            alt="Burger"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/06/17/19/11/pasta-1463934_960_720.jpg"
+            alt="Pasta"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.pixabay.com/photo/2018/05/17/21/02/tacos-3409675_960_720.jpg"
+            alt="Tacos"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.pixabay.com/photo/2017/10/18/11/58/doner-kebab-2863915_960_720.jpg"
+            alt="Döner Kebab"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.pixabay.com/photo/2013/02/21/19/12/barbecue-84671_960_720.jpg"
+            alt="Shish Kebab"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.pixabay.com/photo/2020/12/27/13/51/couscous-5864012_960_720.jpg"
+            alt="Couscous"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://cdn.pixabay.com/photo/2018/03/22/10/59/dessert-3250027_960_720.jpg"
+            alt="Chocolate Cake"
+          />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
 
     <footer>
@@ -133,10 +137,6 @@
         </nav>
 
         <div class="socialmedia">
-          <!-- I dont know what are the Icons used in the CodeReview because of the quality
-                of the screenshots so I used these ones, Hopefully it wont effect my points.
-                Thanks! -->
-
           <i class="fa-brands fa-square-instagram"></i>
           <i class="fa-brands fa-square-facebook"></i>
           <i class="fa-brands fa-youtube"></i>
@@ -147,8 +147,30 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
+      function myFunction() {
+        Swal.fire({
+          title: "Do you want to save the changes?",
+          showDenyButton: true,
+          showCancelButton: true,
+          confirmButtonText: "Save",
+          denyButtonText: `Don't save`,
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            Swal.fire("Saved!", "", "success");
+          } else if (result.isDenied) {
+            Swal.fire("Changes are not saved", "", "info");
+          }
+        });
+      }
+
+      setTimeout("myFunction()", 60000);
+
+      document.getElementById("about").addEventListener("click", myFunction);
+
       var swiper = new Swiper(".mySwiper", {
         pagination: {
           el: ".swiper-pagination",
