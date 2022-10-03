@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food blog</title>
+    <link rel="stylesheet" href="../Styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Ms+Madi&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="top-headers">
+      <h2 id="foodblog">Food blog</h2>
+      <div class="recipes-icon">
+        <h2>Recipes</h2>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <hr />
+
+    <nav>
+      <ul>
+        <div class="top-list">
+          <li>Pasta</li>
+          <li>Taco</li>
+          <li>Pizza</li>
+          <br />
+          <li><a href="recipes_of_the_month.html">Recipes Of The Month</a></li>
+          <br />
+          <li>Dessert</li>
+          <li>Breakfast</li>
+          <li>Lunch</li>
+        </div>
+      </ul>
+    </nav>
+
+    <hr />
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img
+                src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pancakes-2291908_960_720.jpg"
+                alt="Pancakes"
+                />
+            </div>
+            <div class="swiper-slide">
+                <img
+                src="https://cdn.pixabay.com/photo/2022/06/23/09/42/food-and-drink-industry-7279413_960_720.jpg"
+                alt="Vegie Pizza"
+                />
+            </div>
+            <div class="swiper-slide">
+                <img
+                src="https://cdn.pixabay.com/photo/2019/11/09/17/02/burger-4614022_960_720.jpg"
+                alt="Burger"
+                />
+            </div>
+            <div class="swiper-slide">
+                <img
+                src="https://cdn.pixabay.com/photo/2016/06/17/19/11/pasta-1463934_960_720.jpg"
+                alt="Pasta"
+                />
+            </div>
+            <div class="swiper-slide">
+                <img
+                src="https://cdn.pixabay.com/photo/2018/05/17/21/02/tacos-3409675_960_720.jpg"
+                alt="Tacos"
+                />
+            </div>
+            <div class="swiper-slide">
+                <img
+                src="https://cdn.pixabay.com/photo/2017/10/18/11/58/doner-kebab-2863915_960_720.jpg"
+                alt="Döner Kebab"
+                />
+            </div>
+            <div class="swiper-slide">
+                <img
+                src="https://cdn.pixabay.com/photo/2013/02/21/19/12/barbecue-84671_960_720.jpg"
+                alt="Shish Kebab"
+                />
+            </div>
+            <div class="swiper-slide">
+                <img
+                src="https://cdn.pixabay.com/photo/2020/12/27/13/51/couscous-5864012_960_720.jpg"
+                alt="Couscous"
+                />
+            </div>
+            <div class="swiper-slide">
+                <img
+                src="https://cdn.pixabay.com/photo/2018/03/22/10/59/dessert-3250027_960_720.jpg"
+                alt="Chocolate Cake"
+                />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <footer>
+      <div class="footer-div">
+        <nav>
+          <ul>
+            <li><a href="/Pages/about.html">About</a></li>
+            <span>&#124;</span>
+            <li><a href="">Recipes</a></li>
+            <span>&#124;</span>
+            <li><a href="">FAQ</a></li>
+            <span>&#124;</span>
+            <li>
+              <a href="https://codefactory.wien/en/contact-en/" target="_blank"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="socialmedia">
+          <!-- I dont know what are the Icons used in the CodeReview because of the quality
+                of the screenshots so I used these ones, Hopefully it wont effect my points.
+                Thanks! -->
+
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+
+        <div class="copyright">Copyright &copy; 2022 Abdullah Al Hraishawi</div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
+  </body>
+</html>

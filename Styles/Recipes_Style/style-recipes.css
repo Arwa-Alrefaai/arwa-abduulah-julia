@@ -1,0 +1,118 @@
+@media screen and (max-width: 480px) {
+  .grid-container {
+    display: grid;
+    gap: 5%;
+  }
+  .grid-container .div-imgs {
+    width: 100%;
+    height: 100%;
+  }
+  .grid-container .div-imgs h1 {
+    margin: 0px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: "Aref Ruqaa Ink", serif;
+    text-align: center;
+    padding: 5px 0px;
+  }
+  .grid-container .div-imgs img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (min-width: 481px) {
+  .grid-container {
+    display: grid;
+    width: 95%;
+    height: 100vh;
+    margin: 5% auto;
+    gap: 7%;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30%;
+  }
+  .grid-container .div-imgs {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 7px 8px 3px black;
+    margin: 10px 10px;
+  }
+  .grid-container .div-imgs h1 {
+    margin: 0px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: "Aref Ruqaa Ink", serif;
+    text-align: center;
+    padding: 5px 0px;
+  }
+  .grid-container .div-imgs img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.top-headers {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Aref Ruqaa Ink", serif;
+}
+.top-headers #foodblog {
+  font-family: "Ms Madi";
+}
+
+.recipes-icon {
+  display: flex;
+  align-items: center;
+}
+.recipes-icon i {
+  margin: 0px 15px;
+}
+
+.top-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-family: "Aref Ruqaa Ink", serif;
+}
+.top-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-div {
+  background-color: black;
+  padding: 10px 10px;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+footer ul a,
+footer ul span {
+  color: white;
+  text-decoration: none;
+  font-family: "Aref Ruqaa Ink", serif;
+}
+
+.socialmedia {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+.socialmedia i {
+  margin: 5px 5px;
+}
+
+.copyright {
+  color: white;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style-recipes.css.map */

@@ -1,0 +1,137 @@
+@media screen and (max-width: 480px) {
+    .grid-container {
+
+        display: grid;
+        gap: 5%;
+
+        .div-imgs {
+            width: 100%;
+            height: 100%;
+
+            h1 {
+                margin: 0px 0px;
+                background: rgba($color: #000000, $alpha: 0.5);
+                opacity: .8;
+                color: #ffffff;
+                font-family: 'Aref Ruqaa Ink', serif;
+                text-align: center;
+                padding: 5px 0px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .grid-container {
+
+        display: grid;
+        width: 95%;
+        height: 100vh;
+        margin: 5% auto;
+        gap: 7%;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 30% 30%;
+
+        .div-imgs {
+            width: 100%;
+            height: 100%;
+            box-shadow: 0px 7px 8px 3px black;
+            margin: 10px 10px;
+
+            h1 {
+                margin: 0px 0px;
+                background: rgba($color: #000000, $alpha: 0.5);
+                opacity: .8;
+                color: #ffffff;
+                font-family: 'Aref Ruqaa Ink', serif;
+                text-align: center;
+                padding: 5px 0px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.top-headers {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Aref Ruqaa Ink', serif;
+
+    #foodblog {
+        font-family: 'Ms Madi';
+    }
+
+}
+
+.recipes-icon {
+    display: flex;
+    align-items: center;
+
+    i {
+        margin: 0px 15px;
+    }
+}
+
+.top-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    font-family: 'Aref Ruqaa Ink', serif;
+
+    li {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+
+.footer-div {
+    background-color: black;
+    padding: 10px 10px;
+}
+
+footer {
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        margin: 0px 0px;
+        padding: 0px 0px;
+
+        a,
+        span {
+            color: white;
+            text-decoration: none;
+            font-family: 'Aref Ruqaa Ink', serif;
+        }
+    }
+}
+
+.socialmedia {
+    color: white;
+    display: flex;
+    justify-content: center;
+
+    i {
+        margin: 5px 5px;
+    }
+}
+
+.copyright {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
